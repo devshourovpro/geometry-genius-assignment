@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <!-------------------- daisyUi link here ------------------>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- color and font modifier------------------------------- -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lightBlack: 'rgba(17, 17, 17, 0.60)',
+                        bgWhite: '#FFF',
+                        dark: '#414141',
+                        Blue: '#1090D8',
+                        primaryFont: '25px',
+                        secondaryFont: '20px',
+                        thirdFont: '16px'
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
+    <!-- start header section  -------------------------------------->
+    <header class="lg:max-w-7xl lg:mx-auto mt-12">
+        <!-- nav bar --------------------------------------------->
+        <div class="navbar bg-slate-100 rounded p-4">
+            <div class="navbar-start">
+                <h1 class="normal-case text-3xl font-bold">Interactive <br> <span
+                        class="text-xl text-lightBlack font-normal">Geometry Genius</span></h1>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="btn normal-case text-white text-secondaryFont font-medium bg-blue-700 py-1 px-8 hover:bg-slate-600">Blog</a>
+            </div>
+        </div>
+    </header>
+    <!-- header section end  ---------------------------------------------->
 
 
-    
 </body>
 
 </html>
