@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+
     <!-------------------- daisyUi link here ------------------>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
@@ -15,6 +16,7 @@
         tailwind.config = {
             theme: {
                 extend: {
+
                     colors: {
                         lightBlack: 'rgba(17, 17, 17, 0.60)',
                         bgWhite: '#FFF',
@@ -22,8 +24,9 @@
                         Blue: '#1090D8',
                         primaryFont: '25px',
                         secondaryFont: '20px',
-                        thirdFont: '16px'
-                    }
+                        thirdFont: '16px',
+                    },
+                    
                 }
             }
         }
@@ -33,7 +36,7 @@
 
 <body>
     <!-- start header section  -------------------------------------->
-    <header class="lg:max-w-7xl lg:mx-auto mt-12">
+    <header class="lg:max-w-7xl lg:mx-auto mt-12 shadow-md">
         <!-- nav bar --------------------------------------------->
         <div class="navbar bg-slate-100 rounded p-4">
             <div class="navbar-start">
@@ -42,11 +45,132 @@
             </div>
             <div class="navbar-end">
                 <a
-                    class="btn normal-case text-white text-secondaryFont font-medium bg-blue-700 py-1 px-8 hover:bg-slate-600">Blog</a>
+                    class="btn normal-case text-white text-secondaryFont font-medium bg-Blue py-1 px-8 hover:bg-slate-600">Blog</a>
             </div>
         </div>
     </header>
     <!-- header section end  ---------------------------------------------->
+    <main>
+        <!-- geometry section start  ---------------------------------------->
+        <section class="lg:max-w-7xl lg:mx-auto my-12">
+            <div class="grid grid-cols-1 lg:grid-cols-4 px-1 lg:px-0 gap-6">
+                <!-- triangle div ------------------------------- -->
+                
+                <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
+                    <div class="text-center">
+                        <img class="w-4/5 mb-11 mx-auto h-24" src="images/triangle.png" alt="">
+                        <h3 class="text-primaryFont font-bold text-dark mb-1">Triangle</h3>
+                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span>b</span> x <span>h</span></p>
+                        <form class="mb-2" action="">
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
+                                for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="h"> <label
+                                for="" class="text-dark">cm</label>
+                        </form>
+                        <br>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+                <!-- Rectangle div ------------------------------- -->
+
+                <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
+                    <div class="text-center">
+                        <img class="w-4/5 mb-11 mx-auto h-24" src="images/rectangle.png" alt="">
+                        <h3 class="text-primaryFont font-bold text-dark mb-1">Rectangle</h3>
+                        <p class="mb-5 text-dark">Area (A) = <span>w</span> x <span>l</span></p>
+                        <form class="mb-2" action="">
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="w"> <label
+                                for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="l"> <label
+                                for="" class="text-dark">cm</label>
+                        </form>
+                        <br>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+                <!-- Parallelogram div------------------------------- -->
+
+                <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
+                    <div class="text-center">
+                        <img class="w-4/5 mb-11 mx-auto h-24" src="images/parallelogram.png" alt="">
+                        <h3 class="text-primaryFont font-bold text-dark mb-1">Parallelogram</h3>
+                        <p class="mb-5 text-dark">Area (A) = <span>b</span> x <span>h</span></p>
+                        <form class="mb-2" action="">
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
+                                for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="h"> <label
+                                for="" class="text-dark">cm</label>
+                        </form>
+                        <br>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+                <!-- textarea div ------------------------------- -->
+
+                <div class="border border-slate-100 rounded-md shadow px-11 py-10">
+                    <div class="text-center">
+                        <p class="underline text-dark text-primaryFont">Area calculation</p>
+                    </div>
+                </div>
+                <!-- Rhombus div ------------------------------- -->
+
+                <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
+                    <div class="text-center">
+                        <img class="w-4/5 mb-11 mx-auto h-24" src="images/rhombus.png" alt="">
+                        <h3 class="text-primaryFont font-bold text-dark mb-1">Rhombus</h3>
+                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span>d&#8321</span> x <span>d&#8322</span></p>
+                        <form class="mb-2" action="">
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8321"> <label
+                                for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8322"> <label
+                                for="" class="text-dark">cm</label>
+                        </form>
+                        <br>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+                <!-- Pentagon div ------------------------------- -->
+
+                <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
+                    <div class="text-center">
+                        <img class="w-4/5 mb-11 mx-auto h-24" src="images/pentagon.png" alt="">
+                        <h3 class="text-primaryFont font-bold text-dark mb-1">Pentagon</h3>
+                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span>p</span> x <span>b</span></p>
+                        <form class="mb-2" action="">
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="p"> <label
+                                for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
+                                for="" class="text-dark">cm</label>
+                        </form>
+                        <br>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+                <!-- Ellipse div ------------------------------- -->
+
+                <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
+                    <div class="text-center">
+                        <img class="w-4/5 mb-11 mx-auto h-24" src="images/ellipse.png" alt="">
+                        <h3 class="text-primaryFont font-bold text-dark mb-1">Ellipse</h3>
+                        <p class="mb-5 text-dark">Area (A) = &#960<span>a</span><span>b</span></p>
+                        <form class="mb-2" action="">
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="a"> <label
+                                for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
+                                for="" class="text-dark">cm</label>
+                        </form>
+                        <br>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- main section end -------------------- -->
+
+    <!-- js file ------------------------- -->
+    <script src="js/index.js"></script>
 
 
 </body>
