@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <!-- icons links------------------------------------------ -->
+    <script src="https://kit.fontawesome.com/17d2b766b0.js" crossorigin="anonymous"></script>
 
     <!-------------------- daisyUi link here ------------------>
 
@@ -36,7 +38,7 @@
 
 <body>
     <!-- start header section  -------------------------------------->
-    <header class="lg:max-w-7xl lg:mx-auto mt-12 shadow-md">
+    <header class="lg:max-w-8xl lg:mx-auto mt-12 shadow-md">
         <!-- nav bar --------------------------------------------->
         <div class="navbar bg-slate-100 rounded p-4">
             <div class="navbar-start">
@@ -52,14 +54,14 @@
     <!-- header section end  ---------------------------------------------->
     <main>
         <!-- geometry section start  ---------------------------------------->
-        <section class="lg:max-w-7xl lg:mx-auto my-12">
+        <section class="lg:max-w-8xl lg:mx-auto my-12">
             <div class="grid grid-cols-1 lg:grid-cols-4 px-1 lg:px-0 gap-6">
                 <!-- triangle div ------------------------------- -->
 
                 <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
                     <div class="text-center">
                         <img class="w-4/5 mb-11 mx-auto h-24" src="images/triangle.png" alt="">
-                        <h3 class="text-primaryFont font-bold text-dark mb-1">Triangle</h3>
+                        <h3 class="text-primaryFont font-bold text-dark mb-1" id="geometry-heading">Triangle</h3>
                         <p class="mb-5 text-dark">Area (A) = 0.5 x <span id="user-length">b</span> x <span
                                 id="user-height">h</span></p>
                         <div class="flex gap-1 justify-center mb-5">
@@ -67,13 +69,14 @@
                             <p>h = <span id="user-value-two">0</span> cm</p>
                             <div class="relative inline-block">
                                 <button id="edit-button"><img src="images/edit 2.svg" alt=""></button>
-                                <div id="drop-down" class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
+                                <div id="drop-down"
+                                    class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
                                     <div class="flex gap-1">
-                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="user-input-one"
-                                            value="b">
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="user-input-one" value="b">
                                         <label for="" class="text-dark">cm</label>
-                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="user-input-two"
-                                            value="h">
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="user-input-two" value="h">
                                         <label for="" class="text-dark">cm</label>
                                         <input type="checkbox" class="w-6" name="" id="check-button">
                                     </div>
@@ -84,7 +87,8 @@
 
 
                         <br>
-                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600" id="calculate-btn">Calculate</button>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600"
+                            id="calculate-btn">Calculate</button>
                     </div>
                 </div>
                 <!-- Rectangle div ------------------------------- -->
@@ -123,19 +127,20 @@
                 </div>
                 <!-- textarea div ------------------------------- -->
 
-                <div class="border border-slate-100 rounded-md shadow px-11 py-10">
+                <div class="border border-slate-100 rounded-md shadow">
                     <div class="text-center">
                         <p class="underline text-dark text-primaryFont">Area calculation</p>
                     </div>
-                    <div class="overflow-x-hidden">
+                    <div class="overflow-x-auto">
                         <table class="table">
                             <tbody>
                                 <!-- row 1 -->
-                                <tr id="table-row" class="bg-base-200">
-                                    <!-- <td>1</td>
-                              <td>naim</td>
-                              <td>naim</td>
-                              <td>Blue</td> -->
+                                <tr id="table-row" class="bg-base-200 hidden">
+                                    <td id="td-one"></td>
+                                    <td id="td-two"></td>
+                                    <td id="td-three" class="hidden"><span id="geometry-area"></span> <span id="cm">cm</span><sup>2</sup></td>
+                                    <td id="td-four" class="hidden"><button id="Convert-button">Convert To m<sup>2</sup></button></td>
+                                    <td id="td-five" class="hidden"><button id="cross-button"><i class="fa-solid fa-xmark"></i></button></td>
                                 </tr>
 
                             </tbody>
