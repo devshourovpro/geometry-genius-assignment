@@ -26,7 +26,7 @@
                         secondaryFont: '20px',
                         thirdFont: '16px',
                     },
-                    
+
                 }
             }
         }
@@ -55,20 +55,36 @@
         <section class="lg:max-w-7xl lg:mx-auto my-12">
             <div class="grid grid-cols-1 lg:grid-cols-4 px-1 lg:px-0 gap-6">
                 <!-- triangle div ------------------------------- -->
-                
+
                 <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
                     <div class="text-center">
                         <img class="w-4/5 mb-11 mx-auto h-24" src="images/triangle.png" alt="">
                         <h3 class="text-primaryFont font-bold text-dark mb-1">Triangle</h3>
-                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span>b</span> x <span>h</span></p>
-                        <form class="mb-2" action="">
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
-                                for="" class="text-dark">cm</label>
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="h"> <label
-                                for="" class="text-dark">cm</label>
-                        </form>
+                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span id="user-length">b</span> x <span
+                                id="user-height">h</span></p>
+                        <div class="flex gap-1 justify-center mb-5">
+                            <p>b = <span id="user-value-one">0</span> cm</p>
+                            <p>h = <span id="user-value-two">0</span> cm</p>
+                            <div class="relative inline-block">
+                                <button id="edit-button"><img src="images/edit 2.svg" alt=""></button>
+                                <div id="drop-down" class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
+                                    <div class="flex gap-1">
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="user-input-one"
+                                            value="b">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="user-input-two"
+                                            value="h">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input type="checkbox" class="w-6" name="" id="check-button">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                         <br>
-                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600" id="calculate-btn">Calculate</button>
                     </div>
                 </div>
                 <!-- Rectangle div ------------------------------- -->
@@ -111,6 +127,20 @@
                     <div class="text-center">
                         <p class="underline text-dark text-primaryFont">Area calculation</p>
                     </div>
+                    <div class="overflow-x-hidden">
+                        <table class="table">
+                            <tbody>
+                                <!-- row 1 -->
+                                <tr id="table-row" class="bg-base-200">
+                                    <!-- <td>1</td>
+                              <td>naim</td>
+                              <td>naim</td>
+                              <td>Blue</td> -->
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <!-- Rhombus div ------------------------------- -->
 
@@ -120,10 +150,10 @@
                         <h3 class="text-primaryFont font-bold text-dark mb-1">Rhombus</h3>
                         <p class="mb-5 text-dark">Area (A) = 0.5 x <span>d&#8321</span> x <span>d&#8322</span></p>
                         <form class="mb-2" action="">
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8321"> <label
-                                for="" class="text-dark">cm</label>
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8322"> <label
-                                for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8321">
+                            <label for="" class="text-dark">cm</label>
+                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8322">
+                            <label for="" class="text-dark">cm</label>
                         </form>
                         <br>
                         <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
