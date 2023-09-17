@@ -44,7 +44,7 @@ function clickByCalculateButton(geometryHeadingId, geometryLength, geometryHeigh
     const userLength = document.getElementById(geometryLength);
     const userHeight = document.getElementById(geometryHeight);
     if(userLength.innerText === 'b' || userHeight === 'h'){
-        alert('not get valid input')
+        return alert('not get valid input');
     }else{
         const userLengthNumber = parseFloat(userLength.innerText);
     const userHeightNumber = parseFloat(userHeight.innerText);
@@ -55,14 +55,15 @@ function clickByCalculateButton(geometryHeadingId, geometryLength, geometryHeigh
     const tdTwo = document.getElementById(tdTwoId);
     const tdThree = document.getElementById(tdThreeId);
     tdThree.classList.remove('hidden')
-    const geometryArea = document.getElementById(geometryAreaForAll);
+    // const geometryArea = document.getElementById(geometryAreaForAll);
     const tdFour = document.getElementById(tdFourId);
     const tdFive = document.getElementById(tdFiveId);
     tdOne.innerText = rowNumber;
     tdTwo.innerText = geometryName.innerText;
-    geometryArea.innerText = area;
+    // geometryArea.innerText = area;
     tdFour.classList.remove('hidden');
     tdFive.classList.remove('hidden');
+    return area;
     }
     
 }

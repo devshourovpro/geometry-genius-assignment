@@ -97,21 +97,21 @@
                     <div class="text-center">
                         <img class="w-4/5 mb-11 mx-auto h-24" src="images/rectangle.png" alt="">
                         <h3 class="text-primaryFont font-bold text-dark mb-1" id="rectangle-heading">rectangle</h3>
-                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span id="rectangle-length">b</span> x <span
-                                id="rectangle-height">h</span></p>
+                        <p class="mb-5 text-dark">Area (A) = <span id="rectangle-length">w</span> x <span
+                                id="rectangle-height">l</span></p>
                         <div class="flex gap-1 justify-center mb-5">
-                            <p>b = <span id="rectangle-value-one">0</span> cm</p>
-                            <p>h = <span id="rectangle-value-two">0</span> cm</p>
+                            <p>w = <span id="rectangle-value-one">0</span> cm</p>
+                            <p>l = <span id="rectangle-value-two">0</span> cm</p>
                             <div class="relative inline-block">
                                 <button id="rectangle-edit-button"><img src="images/edit 2.svg" alt=""></button>
                                 <div id="rectangle-drop-down"
                                     class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
                                     <div class="flex gap-1">
                                         <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
-                                            id="rectangle-input-one" value="b">
+                                            id="rectangle-input-one" value="w">
                                         <label for="" class="text-dark">cm</label>
                                         <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
-                                            id="rectangle-input-two" value="h">
+                                            id="rectangle-input-two" value="l">
                                         <label for="" class="text-dark">cm</label>
                                         <input type="checkbox" class="w-6" name="" id="rectangle-check-button">
                                     </div>
@@ -131,16 +131,34 @@
                 <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
                     <div class="text-center">
                         <img class="w-4/5 mb-11 mx-auto h-24" src="images/parallelogram.png" alt="">
-                        <h3 class="text-primaryFont font-bold text-dark mb-1">Parallelogram</h3>
-                        <p class="mb-5 text-dark">Area (A) = <span>b</span> x <span>h</span></p>
-                        <form class="mb-2" action="">
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
-                                for="" class="text-dark">cm</label>
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="h"> <label
-                                for="" class="text-dark">cm</label>
-                        </form>
+                        <h3 class="text-primaryFont font-bold text-dark mb-1" id="Parallelogram-heading">Parallelogram</h3>
+                        <p class="mb-5 text-dark">Area (A) = <span id="Parallelogram-length">b</span> x <span
+                                id="Parallelogram-height">h</span></p>
+                        <div class="flex gap-1 justify-center mb-5">
+                            <p>b = <span id="Parallelogram-value-one">0</span> cm</p>
+                            <p>h = <span id="Parallelogram-value-two">0</span> cm</p>
+                            <div class="relative inline-block">
+                                <button id="Parallelogram-edit-button"><img src="images/edit 2.svg" alt=""></button>
+                                <div id="Parallelogram-drop-down"
+                                    class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
+                                    <div class="flex gap-1">
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Parallelogram-input-one" value="b">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Parallelogram-input-two" value="h">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input type="checkbox" class="w-6" name="" id="Parallelogram-check-button">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                         <br>
-                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600"
+                            id="Parallelogram-calculate-btn">Calculate</button>
                     </div>
                 </div>
                 <!-- textarea div ------------------------------- -->
@@ -170,16 +188,34 @@
                 <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
                     <div class="text-center">
                         <img class="w-4/5 mb-11 mx-auto h-24" src="images/rhombus.png" alt="">
-                        <h3 class="text-primaryFont font-bold text-dark mb-1">Rhombus</h3>
-                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span>d&#8321</span> x <span>d&#8322</span></p>
-                        <form class="mb-2" action="">
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8321">
-                            <label for="" class="text-dark">cm</label>
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="d&#8322">
-                            <label for="" class="text-dark">cm</label>
-                        </form>
+                        <h3 class="text-primaryFont font-bold text-dark mb-1" id="Rhombus-heading">Rhombus</h3>
+                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span id="Rhombus-length">d<sub>1</sub></span> x <span
+                                id="Rhombus-height">d<sub>2</sub></span></p>
+                        <div class="flex gap-1 justify-center mb-5">
+                            <p>d<sub>1</sub> = <span id="Rhombus-value-one">0</span> cm</p>
+                            <p>d<sub>2</sub> = <span id="Rhombus-value-two">0</span> cm</p>
+                            <div class="relative inline-block">
+                                <button id="Rhombus-edit-button"><img src="images/edit 2.svg" alt=""></button>
+                                <div id="Rhombus-drop-down"
+                                    class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
+                                    <div class="flex gap-1">
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Rhombus-input-one" value="d1">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Rhombus-input-two" value="d2">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input type="checkbox" class="w-6" name="" id="Rhombus-check-button">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                         <br>
-                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600"
+                            id="Rhombus-calculate-btn">Calculate</button>
                     </div>
                 </div>
                 <!-- Pentagon div ------------------------------- -->
@@ -187,16 +223,34 @@
                 <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
                     <div class="text-center">
                         <img class="w-4/5 mb-11 mx-auto h-24" src="images/pentagon.png" alt="">
-                        <h3 class="text-primaryFont font-bold text-dark mb-1">Pentagon</h3>
-                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span>p</span> x <span>b</span></p>
-                        <form class="mb-2" action="">
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="p"> <label
-                                for="" class="text-dark">cm</label>
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
-                                for="" class="text-dark">cm</label>
-                        </form>
+                        <h3 class="text-primaryFont font-bold text-dark mb-1" id="Pentagon-heading">Pentagon</h3>
+                        <p class="mb-5 text-dark">Area (A) = 0.5 x <span id="Pentagon-length">p</span> x <span
+                                id="Pentagon-height">b</span></p>
+                        <div class="flex gap-1 justify-center mb-5">
+                            <p>p = <span id="Pentagon-value-one">0</span> cm</p>
+                            <p>b = <span id="Pentagon-value-two">0</span> cm</p>
+                            <div class="relative inline-block">
+                                <button id="Pentagon-edit-button"><img src="images/edit 2.svg" alt=""></button>
+                                <div id="Pentagon-drop-down"
+                                    class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
+                                    <div class="flex gap-1">
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Pentagon-input-one" value="p">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Pentagon-input-two" value="b">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input type="checkbox" class="w-6" name="" id="Pentagon-check-button">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                         <br>
-                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600"
+                            id="Pentagon-calculate-btn">Calculate</button>
                     </div>
                 </div>
                 <!-- Ellipse div ------------------------------- -->
@@ -204,16 +258,34 @@
                 <div class="border border-slate-100 rounded-md shadow px-11 py-10 random-color">
                     <div class="text-center">
                         <img class="w-4/5 mb-11 mx-auto h-24" src="images/ellipse.png" alt="">
-                        <h3 class="text-primaryFont font-bold text-dark mb-1">Ellipse</h3>
-                        <p class="mb-5 text-dark">Area (A) = &#960<span>a</span><span>b</span></p>
-                        <form class="mb-2" action="">
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="a"> <label
-                                for="" class="text-dark">cm</label>
-                            <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name="" id="" value="b"> <label
-                                for="" class="text-dark">cm</label>
-                        </form>
+                        <h3 class="text-primaryFont font-bold text-dark mb-1" id="Ellipse-heading">Ellipse</h3>
+                        <p class="mb-5 text-dark">Area (A) = <span id="Pi">&pi;</span> x <span id="Ellipse-length">a</span> x <span
+                                id="Ellipse-height">b</span></p>
+                        <div class="flex gap-1 justify-center mb-5">
+                            <p>a = <span id="Ellipse-value-one">0</span> cm</p>
+                            <p>b = <span id="Ellipse-value-two">0</span> cm</p>
+                            <div class="relative inline-block">
+                                <button id="Ellipse-edit-button"><img src="images/edit 2.svg" alt=""></button>
+                                <div id="Ellipse-drop-down"
+                                    class="hidden absolute overflow-auto z-[1] left-[-145px] dropdown-container">
+                                    <div class="flex gap-1">
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Ellipse-input-one" value="a">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input class="bg-slate-200 pl-2 w-16 text-dark" type="text" name=""
+                                            id="Ellipse-input-two" value="b">
+                                        <label for="" class="text-dark">cm</label>
+                                        <input type="checkbox" class="w-6" name="" id="Ellipse-check-button">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                         <br>
-                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600">Calculate</button>
+                        <button class="bg-Blue text-white py-2 px-14 rounded-lg hover:bg-slate-600"
+                            id="Ellipse-calculate-btn">Calculate</button>
                     </div>
                 </div>
             </div>
