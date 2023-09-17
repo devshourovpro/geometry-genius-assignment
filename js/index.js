@@ -171,3 +171,9 @@ document.getElementById('Ellipse-calculate-btn').addEventListener('click', funct
     geometryArea.innerText = EllipseArea * 3.1416;
 })
 
+
+// blog button click function 
+document.getElementById('blog-button').addEventListener('click', function(){
+    window.location.href = 'http://127.0.0.1:5500/blog.html';
+})
+
