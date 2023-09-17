@@ -1,4 +1,4 @@
-// random color function 
+
 
 function getRandomColor() {
     const letters = '0123456789ABCEF';
@@ -20,70 +20,36 @@ for (const div of divS) {
 }
 
 
-
+// triangle function here 
 
 // edit button and drop down button 
-document.getElementById('edit-button').addEventListener('click', function () {
-    const dropDown = document.getElementById('drop-down');
-    dropDown.classList.remove('hidden')
+document.getElementById('triangle-edit-button').addEventListener('click', function () {
+    editValue('triangle-drop-down');
+
 })
 
 
 // click checkbox and add value 
 
-document.getElementById('check-button').addEventListener('click', function () {
-    const checkButton = document.getElementById('check-button');
-    const userInputOne = document.getElementById('user-input-one');
-    const userInputTwo = document.getElementById('user-input-two');
-    const userValueOne = document.getElementById('user-value-one');
-    const userValueTwo = document.getElementById('user-value-two');
-    const userLength = document.getElementById('user-length');
-    const userHeight = document.getElementById('user-height');
+document.getElementById('triangle-check-button').addEventListener('click', function () {
 
-
-    if (checkButton.Checked === false) {
-        userValueOne.innerText = '0';
-        userValueTwo.innerText = '0';
-        // userLength.innerText = userValueOne.value ;
-        // userHeight.innerText = userValueTwo.value ;
-    }
-    else {
-        userValueOne.innerText = userInputOne.value;
-        userValueTwo.innerText = userInputTwo.value;
-        userLength.innerText = userInputOne.value;
-        userHeight.innerText = userInputTwo.value;
-    }
-})
-let number = 1;
-document.getElementById('calculate-btn').addEventListener('click', function () {
-    const rowNumber = number++;
-    const geometryName = document.getElementById('geometry-heading');
-    const userLength = document.getElementById('user-length');
-    const userHeight = document.getElementById('user-height');
-    const userLengthNumber = parseFloat(userLength.innerText);
-    const userHeightNumber = parseFloat(userHeight.innerText);
-    const area = userLengthNumber * userHeightNumber;
-    const tableRow = document.getElementById('table-row');
-    tableRow.classList.remove('hidden');
-    const tdOne = document.getElementById('td-one');
-    const tdTwo = document.getElementById('td-two');
-    const tdThree = document.getElementById('td-three');
-    tdThree.classList.remove('hidden')
-    const geometryArea = document.getElementById('geometry-area');
-    const tdFour = document.getElementById('td-four');
-    const tdFive = document.getElementById('td-five');
-    tdOne.innerText = rowNumber;
-    tdTwo.innerText = geometryName.innerText;
-    geometryArea.innerText = area;
-    tdFour.classList.remove('hidden')
-    tdFive.classList.remove('hidden')
+    clickCheckButton('triangle-check-button', 'triangle-input-one', 'triangle-input-two', 'triangle-value-one', 'triangle-value-two', 'triangle-length', 'triangle-height');
 })
 
+// click calculate button and get table row
+
+document.getElementById('triangle-calculate-btn').addEventListener('click', function () {
+
+    clickByCalculateButton('triangle-heading', 'triangle-length', 'triangle-height', 'table-row', 'td-one', 'td-two', 'td-three', 'td-four', 'td-five', 'geometry-area');
+})
+
+// cross button click and delete row button 
 document.getElementById('cross-button').addEventListener('click', function(){
-    const tableRow = document.getElementById('table-row');
-    tableRow.classList.add('hidden');
+    crossButtonClick('table-row')
 })
-document.getElementById('Convert-button').addEventListener('click', function(){
+
+// cm to m convert button 
+document.getElementById('convert-button').addEventListener('click', function(){
     const geometryArea = document.getElementById('geometry-area');
     const geometryAreaNumber = parseFloat(geometryArea.innerText);
     const meter = geometryAreaNumber / 100;
